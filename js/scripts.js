@@ -12,18 +12,25 @@ $(document).ready(function(){
     // declare new variables to equal the corresponding modal
 
     var track = question1 + question2 + question3;
+    var trackDescription;
 
-    if (track <= 5) {
-      track = "CSS/Design!"
+
+    if (track <= 10) {
+      track = "CSS/Design!";
+      trackDescription = "get to study design stuff";
     } else if (track >= 10 && track <= 21) {
       track = "PHP and Drupal"
+      trackDescription = "can work for the government or restaurants";
     } else if (track >= 22) {
       track = "Ruby"
+      trackDescription = "can work for cool startups and write elegant, simple code";
+    } else {
+      alert("Maybe you should just be a vet instead...")
     }
 
     // show match modal
-    $("results").show();
     $(".user-name").text(name);
-    $(".which-one").text(track);
+    $(".which-track").text(track);
+    $(".track-description").text(trackDescription);
   })
 })
