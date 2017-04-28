@@ -181,7 +181,7 @@
         <div class="row">
           <div class="container-fluid">
             <div class="btn-group" id="centerbutton">
-              <button id="submit" class="btn btn-info" data-toggle="modal" data-target="#my-modal">Click here to find your track!</button>
+              <button id="submit" class="btn" data-toggle="modal" data-target="#my-modal">Click here to find your track!</button>
               <!-- button closes -->
             </div>
           </div>
@@ -196,11 +196,12 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Results!</h4>
+            <h4 class="modal-title">Result:</h4>
           </div>
           <div class="modal-body">
             <h5>We found the perfect track for you, <span class="user-name"></span>!</h5>
-            <h6>You should study <span class="which-track"></span>. This track is useful because in it, you <span class="track-description"></span></h6>
+            <p>You should study <span class="which-track"></span>. This track is useful because <span class="track-description"></span></p>
+            <div class="container-fluid track-photo pull-left"></div>
           </div>
         </div><!-- end modal content -->
       </div><!-- end modal dialog -->

@@ -6,7 +6,6 @@
 body {
   font-family: 'Raleway', sans-serif;
   color: #666;
-
 }
 
 #intro {
@@ -17,7 +16,7 @@ body {
   margin-bottom: 50px;
 }
 
-.name {
+.name, #salary {
   margin-bottom: 40px;
 }
 
@@ -25,18 +24,22 @@ h3 {
   border-bottom: 2px solid #666;
 }
 
-/*img {
-  width: 45%:
-}*/
-
-#salary, #how-much {
-  margin-bottom: 40px;
-}
-
-#show-results, #how-much {
+#submit {
   background-color: #00b3b4;
   font-family: 'Raleway', sans-serif;
+  color: white;
   width: 100%;
+}
+
+.modal-header {
+  background-color: #00b3b4;
+  color: white;
+}
+.img-responsive {
+  width: 35%;
+  display: inline-block;
+  margin-right:140px;
+  float: right;
 }
 
 .user-name {
