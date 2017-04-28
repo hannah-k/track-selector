@@ -13,7 +13,7 @@
     <div class="row">
       <div class="container">
       <!-- jumbotron -->
-        <div class="col-md-12 jumbotron">
+        <div class="col-md-12 jumbotron text-center">
           <h1>Epicodus Track Selector</h1>
           <p>Which end of the spectrum should you be working on?</p>
         </div>
@@ -28,19 +28,21 @@
       </div>
 
       <!-- quiz starts -->
-      <form id="track-quiz" action="index.html" method="post">
+      <form id="track-quiz" class="form-group" action="index.html" method="post">
         <!-- enter name -->
-        <div>
-          <label for="name">What is your name?</label>
+        <div class="name">
+          <label for="name">First, what is your name?</label>
           <input type="text" class="form-control" id="name" placeholder="Name...">
         </div>
         <!-- Question 1 -->
-        <div class="row">
-          <div class="col-md-12 question" id="question-1">
-            <h3>Question 1:</h3>
-            <p>Does making things look and work well, obsessing over layouts, navigation, colors, and design sound like fun to you?</p>
+        <div class="question">
+          <div class="row">
+            <div class="col-md-12 question" id="question-1">
+              <h3>Question 1:</h3>
+              <p>Does making things look and work well, obsessing over layouts, navigation, colors, and design sound like fun to you?</p>
+            </div>
           </div>
-      <!-- first option: -->
+          <!-- first option: -->
           <div class="row">
             <div class="radio col-md-6">
               <label>
@@ -48,7 +50,7 @@
                 <p>Oh boy! It sure does.</p>
               </label>
             </div>
-      <!-- second option: -->
+            <!-- second option: -->
             <div class="radio col-md-6">
               <label>
                 <input type="radio" name="question1" value="2">
@@ -57,13 +59,14 @@
             </div>
           </div>
         </div>
-          <!-- question 2 -->
-        <div class="row">
-          <div class="col-md-12 question" id="question-2">
-            <h3>Question 2:</h3>
-            <p>Do you like making interactive applications?</p>
+        <!-- question 2 -->
+        <div class="question">
+          <div class="row">
+            <div class="col-md-12 question" id="question-2">
+              <h3>Question 2:</h3>
+              <p>Do you like making interactive applications?</p>
+            </div>
           </div>
-        </div>
           <!-- first option: -->
           <div class="row">
             <div class="radio col-md-3">
@@ -94,11 +97,92 @@
               </label>
             </div>
           </div>
+        </div>
           <!-- Question 3 -->
+        <div class="question">
+          <div class="row">
+            <div class="col-md-12 question" id="question-3">
+              <h3>Question 3:</h3>
+              <p>What kind of working environment sounds most appealing to you?</p>
+            </div>
+          </div>
+          <div class="row">
+            <!-- first option -->
+            <div class="radio col-md-4">
+              <label>
+                <input type="radio" name="question3" value="1">
+                <p>Freelance from home.</p>
+              </label>
+            </div>
+            <!-- second option -->
+            <div class="radio col-md-4">
+              <label>
+                <input type="radio" name="question3" value="1">
+                <p>Maintaining a restaurants webpage or even government work sounds fun to me!</p>
+              </label>
+            </div>
+            <!-- third option -->
+            <div class="radio col-md-4">
+              <label>
+                <input type="radio" name="question3" value="1">
+                <p>I think I'd like to work for a startup or younger company.</p>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- question 4 -->
+        <div class="">
+          <div class="row">
+            <div class="col-md-12 question" id="question-4">
+              <h3>Question 4:</h3>
+              <p>Which of these do you prefer?</p>
+            </div>
+          </div>
+          <!-- first option -->
+          <div class="row question-4">
+            <div class="radio col-md-6">
+              <!-- <img src="img/cat.jpg" alt="cat" class="img-responsive"> -->
+              <label>
+                <input type="radio" name="question4" value="1">
+                <p>Cats</p>
+              </label>
+            </div>
+            <!-- second option -->
+            <div class="radio col-md-6">
+              <img src="img/dog.jpeg" alt="dog" class="img-responsive">
+              <label>
+                <input type="radio" name="question4" value="2">
+                <p>Dogs</p>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- question 5 -->
+        <div class="question">
+          <div class="row">
+            <div class="col-md-12 question" id="question-5">
+              <h3>Question 5:</h3>
+              <p>How much money would you like to make?</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-md-ooffset-4">
+              <label class="sr-only" for="ideal-salary">Amount (in dollars)</label>
+              <div  id="salary" class="input-group">
+                <div class="input-group-addon">$</div>
+                <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+                <div class="input-group-addon">.00</div>
+              </div>
+              <button id="how-much" type="" class="btn">At least this much</button>
+            </div>
+          </div>
+        </div>
         <!-- submit button -->
         <div class="row">
-          <div class="btn-group" id="centerbutton">
-            <button id="show-results" type="submit" name="button" class="btn btn-success btn-lg">Find out!</button>
+          <div class="col-md-4 col-md-offset-4">
+            <div class="btn-group" id="centerbutton">
+              <button id="show-results" type="submit" name="button" class="btn btn-info btn-lg">Click here to find out!</button>
+            </div>
           </div>
         </div>
           <!-- button closes -->
