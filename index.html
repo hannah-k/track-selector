@@ -181,8 +181,7 @@
         <div class="row">
           <div class="container-fluid">
             <div class="btn-group" id="centerbutton">
-              <!-- <button id="show-results" type="submit" name="button" class="btn btn-info btn-lg">Click here to find your track!</button> -->
-              <button id="submit" class="btn btn-info" data-toggle="modal" data-target="#myModal">Click here to find your track!</button>
+              <button id="submit" class="btn btn-info" data-toggle="modal" data-target="#my-modal">Click here to find your track!</button>
               <!-- button closes -->
             </div>
           </div>
@@ -190,33 +189,21 @@
       </form>
     </div>
 
-      <!-- results -->
+        <!-- MODAL RESULTS -->
 
-    <!-- <div class="container">
-      <div class="col-md-12 results">
-        <h1>We found the perfect track for you, <span class="user-name"></span>!</h1>
-        <h2>You should study <span class="which-track"></span>. This track is useful because in it, you <span class="track-description"></span></h2>
-      </div>
-      end of results
-        We found the perfect track for you, <span class="user-name"></span>!
-        <h5>You should study <span class="which-track"></span></h5>
-        <p>This track is useful because in it, you <span class="track-description"></span> </p>
-    </div> -->
-
-        <!-- ATTEMPT AT MODAL RESULTS -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal" tabindex="-1" role="dialog" id="my-modal">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">We found the perfect match for you, <span class="user-name"></span>!</h4>
+            <h4 class="modal-title">Results!</h4>
           </div>
           <div class="modal-body">
-            <h5>You should study <span class="which-track"></span></h5>
-            <p>This track is useful because in it, you <span class="track-description"></span> </p>
+            <h5>We found the perfect track for you, <span class="user-name"></span>!</h5>
+            <h6>You should study <span class="which-track"></span>. This track is useful because in it, you <span class="track-description"></span></h6>
           </div>
-        </div>
-      </div>
-    </div>
+        </div><!-- end modal content -->
+      </div><!-- end modal dialog -->
+    </div><!-- end modal -->
   </body>
 </html>
