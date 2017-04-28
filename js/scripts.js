@@ -17,7 +17,7 @@ $(document).ready(function(){
 
     if (track <= 10) {
       track = "CSS/Design!";
-      trackDescription = "in it you get to conceptualize, plan, and build a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images, and use of interactive features that deliver pages to your site visitors. Web Design is a crucial component in web development, and students who learn design will be able to engineer positive and interactive user experiences through innovative interfaces. ";
+      trackDescription = "in it you get to conceptualize, plan, and build a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images, and use interactive features that deliver pages to your site visitors. Web Design is a crucial component in web development, and students who learn design will be able to engineer positive and interactive user experiences through innovative interfaces. ";
       var trackPhoto = "'img/css.png'";
     } else if (track >= 10 && track <= 21) {
       track = "PHP and Drupal"

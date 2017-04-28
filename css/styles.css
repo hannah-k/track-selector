@@ -16,7 +16,7 @@ body {
   margin-bottom: 50px;
 }
 
-.name, #salary {
+.name, .email-entry, #salary {
   margin-bottom: 40px;
 }
 
