@@ -14,16 +14,14 @@ h3 {
   border-bottom: 2px solid black;
 }
 
-
 img {
   width: 45%:
 }
 
-#salary {
+#salary, #how-much {
   margin-bottom: 40px;
 }
 
-#how-much {
-  margin-bottom: 40px;
-  display: inline-block;
-}
+/*.results {
+  display: none;
+}*/
