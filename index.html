@@ -144,7 +144,6 @@
           <!-- first option -->
           <div class="row question-4">
             <div class="radio col-md-6">
-              <!-- <img src="img/cat.jpg" alt="cat" class="img-responsive"> -->
               <label>
                 <input type="radio" name="question4" value="2">
                 <p>Cats</p>
@@ -152,7 +151,6 @@
             </div>
             <!-- second option -->
             <div class="radio col-md-6">
-              <!-- <img src="img/dog.jpeg" alt="dog" class="img-responsive"> -->
               <label>
                 <input type="radio" name="question4" value="2">
                 <p>Dogs</p>
@@ -183,11 +181,12 @@
         <div class="row">
           <div class="container-fluid">
             <div class="btn-group" id="centerbutton">
-              <button id="show-results" type="submit" name="button" class="btn btn-info btn-lg">Click here to find out!</button>
+              <!-- <button id="show-results" type="submit" name="button" class="btn btn-info btn-lg">Click here to find your track!</button> -->
+              <button id="submit" class="btn btn-info" data-toggle="modal" data-target="#myModal">Click here to find your track!</button>
+              <!-- button closes -->
             </div>
           </div>
         </div>
-          <!-- button closes -->
       </form>
     </div>
 
@@ -196,27 +195,28 @@
     <!-- <div class="container">
       <div class="col-md-12 results">
         <h1>We found the perfect track for you, <span class="user-name"></span>!</h1>
-        <h2>You should study <span class="which-track"></span></h2>
-
+        <h2>You should study <span class="which-track"></span>. This track is useful because in it, you <span class="track-description"></span></h2>
+      </div>
+      end of results
         We found the perfect track for you, <span class="user-name"></span>!
         <h5>You should study <span class="which-track"></span></h5>
         <p>This track is useful because in it, you <span class="track-description"></span> </p>
-      </div>
     </div> -->
 
         <!-- ATTEMPT AT MODAL RESULTS -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Thank you, <span class="user-name"></span>!</h4>
+            <h4 class="modal-title">We found the perfect match for you, <span class="user-name"></span>!</h4>
           </div>
           <div class="modal-body">
-            <p>We found the perfect track for you. You should study <span class="which-track"></span>. This track is useful because in it, you <span class="track-description"></span>.</p>
+            <h5>You should study <span class="which-track"></span></h5>
+            <p>This track is useful because in it, you <span class="track-description"></span> </p>
           </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
+        </div>
+      </div>
     </div>
   </body>
 </html>

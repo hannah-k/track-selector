@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("#track-quiz").submit(function(event){
+  $("#submit").click(function(event){
     event.preventDefault();
 
     // collect the input
@@ -29,6 +29,8 @@ $(document).ready(function(){
     }
 
     // show match modal
+    // btn.onclick = function() {
+
     $(".user-name").text(name);
     $(".which-track").text(track);
     $(".track-description").text(trackDescription);
