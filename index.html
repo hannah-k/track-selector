@@ -11,49 +11,104 @@
   </head>
   <body>
     <div class="row">
+      <div class="container">
       <!-- jumbotron -->
-      <div class="col-md-12 jumbotron">
-        <h1>Epicodus Track Selector</h1>
-        <p>Which end of the spectrum should you be working on?</p>
+        <div class="col-md-12 jumbotron">
+          <h1>Epicodus Track Selector</h1>
+          <p>Which end of the spectrum should you be working on?</p>
+        </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container fluid">
         <!-- intro -->
       <div class="row">
-        <div class="col-md-8 col-md-offset-2" id="intro">
+        <div class="col-md-12 " id="intro">
           <p>Now that Epicodus offers so many different courses, we often get students unsure of what to take after they finish Introduction to Programming. If you're an Epicodus student or anybody wondering which language to learn, this quiz might help you decide!</p>
         </div>
       </div>
 
       <!-- quiz starts -->
       <form id="track-quiz" action="index.html" method="post">
+        <!-- enter name -->
+        <div>
+          <label for="name">What is your name?</label>
+          <input type="text" class="form-control" id="name" placeholder="Name...">
+        </div>
+        <!-- Question 1 -->
         <div class="row">
-          <div class="col-md-12 question" id="question 1">
+          <div class="col-md-12 question" id="question-1">
             <h3>Question 1:</h3>
-            <p>......?</p>
+            <p>Does making things look and work well, obsessing over layouts, navigation, colors, and design sound like fun to you?</p>
           </div>
       <!-- first option: -->
           <div class="row">
             <div class="radio col-md-6">
-              <img src=" " alt=" " class="img-responsive">
               <label>
-                <input type="radio" name="place" value="beach">
-                <p>ANSWER</p>
+                <input type="radio" name="question1" value="1">
+                <p>Oh boy! It sure does.</p>
               </label>
             </div>
       <!-- second option: -->
             <div class="radio col-md-6">
-              <img src=" " alt=" " class="img-responsive">
               <label>
-                <input type="radio" name="place" value="beach">
-                <p>ANSWER</p>
+                <input type="radio" name="question1" value="2">
+                <p>Please no, anything but colors.</p>
               </label>
-              </div>
             </div>
           </div>
-
-
+        </div>
+          <!-- question 2 -->
+        <div class="row">
+          <div class="col-md-12 question" id="question-2">
+            <h3>Question 2:</h3>
+            <p>Do you like making interactive applications?</p>
+          </div>
+        </div>
+          <!-- first option: -->
+          <div class="row">
+            <div class="radio col-md-3">
+              <label>
+                <input type="radio" name="question2" value="1">
+                <p>Only when they look really nice.</p>
+              </label>
+            </div>
+            <!-- second option: -->
+            <div class="radio col-md-3">
+              <label>
+                <input type="radio" name="question2" value="2">
+                <p>I prefer managing content</p>
+              </label>
+            </div>
+            <!-- third option: -->
+            <div class="radio col-md-3">
+              <label>
+                <input type="radio" name="question2" value="1">
+                <p>Only if it is simple and elegant.</p>
+              </label>
+            </div>
+            <!-- fourth option: -->
+            <div class="radio col-md-3">
+              <label>
+                <input type="radio" name="question2" value="1">
+                <p>I just like video games.</p>
+              </label>
+            </div>
+          </div>
+          <!-- Question 3 -->
+        <!-- submit button -->
+        <div class="row">
+          <div class="btn-group" id="centerbutton">
+            <button id="show-results" type="submit" name="button" class="btn btn-success btn-lg">Find out!</button>
+          </div>
+        </div>
+          <!-- button closes -->
       </form>
+    </div>
+
+      <!-- results -->
+
+    <div class="container">
+
     </div>
   </body>
 </html>
